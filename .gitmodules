@@ -1,0 +1,3 @@
+[submodule "Muffin"]
+	path = Muffin
+	url = git@github.com:Bigaston/Muffin.git
