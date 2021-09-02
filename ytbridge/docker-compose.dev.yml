@@ -1,0 +1,21 @@
+version: "3.4"
+services:
+  ytbridge:
+    build:
+      context: .
+      target: runner
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./:/usr/app
+    command: ["npx", "nodemon", "server.js"]
+    labels:
+      traefik.port: 3000
+      traefik.frontend.rule: "Host:ytbridge.test"
+    networks:
+      - default
+      - traefik
+
+networks:
+  traefik:
+    external: true

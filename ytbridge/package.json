@@ -1,0 +1,22 @@
+{
+  "name": "ytbridge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fluent-ffmpeg": "^2.1.2",
+    "ytdl-core": "^4.8.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "nodemon": "^2.0.7"
+  }
+}
